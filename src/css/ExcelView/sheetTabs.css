@@ -1,0 +1,130 @@
+
+.tab-container 
+{
+    grid-area: content;
+    height: 100%; /* Must have a defined height */
+    overflow: hidden; /* Prevents the whole thing from scrolling */
+    background-color: var(--light-gray);
+}
+
+.view-grid
+{
+  position: relative;
+  display: grid;
+  grid-template-rows: auto auto 1fr; /* Header + rest */
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "fileNames"
+    "viewContainer";
+  height: 100vh;
+   scrollbar-gutter: stable;
+}
+
+.sheet-content
+{
+    padding: 0 0 0 .5rem;
+    grid-area: content;
+    height: 100%;
+    overflow: hidden;
+}
+
+.view-header
+{
+    grid-area: header;
+    background-color: var(--light-gray);
+    padding: 1rem;
+}
+
+.divider
+{
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    grid-area: divider; 
+}
+
+.fileNames 
+{
+    grid-area: fileNames;
+    display: flex;
+}
+
+.leftName
+{
+    grid-area: leftName;
+}
+
+.rightName
+{
+    grid-area: rightName;
+}
+
+.leftName, .rightName
+{
+    text-align: center;
+    padding: .3rem;
+    background-color: var(--light-gray);
+    font-weight: bold;
+    box-shadow: 0 2px 0px rgba(0, 0, 0, 0.2);
+    flex: 1;
+}
+
+.viewContainer 
+{
+    grid-area: viewContainer;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: minmax(0, 1fr) .2rem minmax(0, 1fr);
+    grid-template-areas:
+    "left divider right";
+    overflow-y: auto;
+    overflow-x: auto;
+    scrollbar-gutter: stable;
+}
+
+.original-view
+{
+    grid-area: left;
+}
+
+.new-view
+{
+    grid-area: right;
+}
+
+.tabs
+{
+    grid-area: footer;
+    display:  flex;
+    flex-direction: row;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    background-color: darkgreen;
+}
+
+.tabs button
+{
+    padding: 0.5rem 1.2rem;
+    cursor: pointer;
+    color: var(--light-gray);    
+}
+
+.tabs button:hover
+{
+    background-color: var(--selected-tab-hover-color);
+    text-decoration: underline;
+    color: black;
+}
+
+.selected-button
+{
+    text-decoration: underline;
+    font-weight: bold;
+    background-color: var(--selected-tab-color);
+}
+
+.unselected-button
+{
+    text-decoration: none;
+    font-weight: normal;
+    background-color: var(--xl-color);
+}

@@ -1,0 +1,34 @@
+:root
+{
+  --primary-white: #fffafa;
+  --primary-btn-txt-color:#f1f0f5;
+  --primary-btn-color:#2196F3;
+  --primary-btn-color-hover:#75bcf5;
+  --xl-color:#4CAF50;
+  --selected-tab-color:#15e62086;
+  --selected-tab-hover-color:#9ff5a3;
+  --light-green: #e6ffe6;
+  --light-gray:#F7F7F7;
+  --line-number-color:#4080A0;
+  --inserted-row-color:#C1D9B0;
+  --deleted-row-color:#D1A1A1;
+  --imaginary-row-color:gray;
+  --changed-piece-color:#808080;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+    html, body {
+    height: 100%;
+    font-family: sans-serif;
+  }
+
+  #root
+  {
+    height: 100%;
+    background-color: var(--primary-white);
+  }

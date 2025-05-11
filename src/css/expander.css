@@ -1,0 +1,77 @@
+.toggle-button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--xl-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .expander-content {
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .expander-content-body
+  {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .expander-content-footer 
+  {
+    line-height: 1.4rem;
+    min-height: 5rem;
+  }
+
+  .expander-content-header
+  {
+    line-height: 1.4rem;
+  }
+
+  .expander {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 40px;
+    background-color: var(--primary-white);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: width 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .expander.expanded {
+    width: 250px;
+  }
+
+  .img-container img
+  {
+    height: 7rem;
+    margin: 1rem 0rem;
+  }
+
+  .xlLogo
+  {
+    display: flex;
+    justify-content: center;
+    gap:.45rem;
+  }
+
+  .xlLogo p 
+  {
+    line-height: 1.5rem;
+  }
+
+  .xlLogo img 
+  {
+    height: 1.5rem;
+  }

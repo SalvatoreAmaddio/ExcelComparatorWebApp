@@ -1,0 +1,632 @@
+{
+  "FileName1": "File1.xlsx",
+  "FileName2": "File2.xlsx",
+  "Pages": [
+    {
+      "SheetName": "People",
+      "OriginalOldLines": [
+        {
+          "Type": 0,
+          "Position": 1,
+          "Text": "ID\tNAME     \tLAST NAME",
+          "SubPieces": [
+            {
+              "Type": 0,
+              "Position": 1,
+              "Text": "ID",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 2,
+              "Text": "\t",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 3,
+              "Text": "NAME",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 4,
+              "Text": "     \t",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 5,
+              "Text": "LAST",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 6,
+              "Text": " ",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 7,
+              "Text": "NAME",
+              "SubPieces": []
+            }
+          ]
+        },
+        {
+          "Type": 4,
+          "Position": 2,
+          "Text": "1 \tSALVATORE\tAMADDIO  ",
+          "SubPieces": [
+            {
+              "Type": 0,
+              "Position": 1,
+              "Text": "1",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 2,
+              "Text": " \t",
+              "SubPieces": []
+            },
+            {
+              "Type": 1,
+              "Position": 3,
+              "Text": "SALVATORE",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 4,
+              "Text": "\t",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 5,
+              "Text": "AMADDIO",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 6,
+              "Text": "  ",
+              "SubPieces": []
+            }
+          ]
+        },
+        {
+          "Type": 0,
+          "Position": 3,
+          "Text": "2 \tMICHELE  \tPETRAROLO",
+          "SubPieces": [
+            {
+              "Type": 0,
+              "Position": 1,
+              "Text": "2",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 2,
+              "Text": " \t",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 3,
+              "Text": "MICHELE",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 4,
+              "Text": "  \t",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 5,
+              "Text": "PETRAROLO",
+              "SubPieces": []
+            }
+          ]
+        },
+        {
+          "Type": 4,
+          "Position": 4,
+          "Text": "3 \tBORYANA  \tSIMEONOVA",
+          "SubPieces": [
+            {
+              "Type": 0,
+              "Position": 1,
+              "Text": "3",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 2,
+              "Text": " \t",
+              "SubPieces": []
+            },
+            {
+              "Type": 1,
+              "Position": 3,
+              "Text": "BORYANA",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 4,
+              "Text": "  \t",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 5,
+              "Text": "SIMEONOVA",
+              "SubPieces": []
+            }
+          ]
+        },
+        {
+          "Type": 0,
+          "Position": 5,
+          "Text": "4 \tLAVINIA  \tGALLI    ",
+          "SubPieces": [
+            {
+              "Type": 0,
+              "Position": 1,
+              "Text": "4",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 2,
+              "Text": " \t",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 3,
+              "Text": "LAVINIA",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 4,
+              "Text": "  \t",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 5,
+              "Text": "GALLI",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 6,
+              "Text": "    ",
+              "SubPieces": []
+            }
+          ]
+        },
+        {
+          "Type": 0,
+          "Position": 6,
+          "Text": "5 \tROBERTO  \tSAVIANO  ",
+          "SubPieces": [
+            {
+              "Type": 0,
+              "Position": 1,
+              "Text": "5",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 2,
+              "Text": " \t",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 3,
+              "Text": "ROBERTO",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 4,
+              "Text": "  \t",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 5,
+              "Text": "SAVIANO",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 6,
+              "Text": "  ",
+              "SubPieces": []
+            }
+          ]
+        },
+        {
+          "Type": 0,
+          "Position": 7,
+          "Text": "",
+          "SubPieces": []
+        }
+      ],
+      "OriginalNewLines": [
+        {
+          "Type": 0,
+          "Position": 1,
+          "Text": "ID\tNAME   \tLAST NAME",
+          "SubPieces": [
+            {
+              "Type": 0,
+              "Position": 1,
+              "Text": "ID",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 2,
+              "Text": "\t",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 3,
+              "Text": "NAME",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 4,
+              "Text": "   \t",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 5,
+              "Text": "LAST",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 6,
+              "Text": " ",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 7,
+              "Text": "NAME",
+              "SubPieces": []
+            }
+          ]
+        },
+        {
+          "Type": 4,
+          "Position": 2,
+          "Text": "1 \tSALVO  \tAMADDIO  ",
+          "SubPieces": [
+            {
+              "Type": 0,
+              "Position": 1,
+              "Text": "1",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 2,
+              "Text": " \t",
+              "SubPieces": []
+            },
+            {
+              "Type": 2,
+              "Position": 3,
+              "Text": "SALVO",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 4,
+              "Text": "  \t",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 5,
+              "Text": "AMADDIO",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 6,
+              "Text": "  ",
+              "SubPieces": []
+            }
+          ]
+        },
+        {
+          "Type": 0,
+          "Position": 3,
+          "Text": "2 \tMICHELE\tPETRAROLO",
+          "SubPieces": [
+            {
+              "Type": 0,
+              "Position": 1,
+              "Text": "2",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 2,
+              "Text": " \t",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 3,
+              "Text": "MICHELE",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 4,
+              "Text": "\t",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 5,
+              "Text": "PETRAROLO",
+              "SubPieces": []
+            }
+          ]
+        },
+        {
+          "Type": 4,
+          "Position": 4,
+          "Text": "3 \tBO     \tSIMEONOVA",
+          "SubPieces": [
+            {
+              "Type": 0,
+              "Position": 1,
+              "Text": "3",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 2,
+              "Text": " \t",
+              "SubPieces": []
+            },
+            {
+              "Type": 2,
+              "Position": 3,
+              "Text": "BO",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 4,
+              "Text": "     \t",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 5,
+              "Text": "SIMEONOVA",
+              "SubPieces": []
+            }
+          ]
+        },
+        {
+          "Type": 0,
+          "Position": 5,
+          "Text": "4 \tLAVINIA\tGALLI    ",
+          "SubPieces": [
+            {
+              "Type": 0,
+              "Position": 1,
+              "Text": "4",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 2,
+              "Text": " \t",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 3,
+              "Text": "LAVINIA",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 4,
+              "Text": "\t",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 5,
+              "Text": "GALLI",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 6,
+              "Text": "    ",
+              "SubPieces": []
+            }
+          ]
+        },
+        {
+          "Type": 0,
+          "Position": 6,
+          "Text": "5 \tROBERTO\tSAVIANO  ",
+          "SubPieces": [
+            {
+              "Type": 0,
+              "Position": 1,
+              "Text": "5",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 2,
+              "Text": " \t",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 3,
+              "Text": "ROBERTO",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 4,
+              "Text": "\t",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 5,
+              "Text": "SAVIANO",
+              "SubPieces": []
+            },
+            {
+              "Type": 0,
+              "Position": 6,
+              "Text": "  ",
+              "SubPieces": []
+            }
+          ]
+        },
+        {
+          "Type": 0,
+          "Position": 7,
+          "Text": "",
+          "SubPieces": []
+        }
+      ]
+    },
+    {
+      "SheetName": "Cities",
+      "OriginalOldLines": [
+        {
+          "Type": 0,
+          "Position": 1,
+          "Text": "ID\tNAME   ",
+          "SubPieces": []
+        },
+        {
+          "Type": 0,
+          "Position": 2,
+          "Text": "1 \tCATANIA",
+          "SubPieces": []
+        },
+        {
+          "Type": 0,
+          "Position": 3,
+          "Text": "2 \tPALERMO",
+          "SubPieces": []
+        },
+        {
+          "Type": 0,
+          "Position": 4,
+          "Text": "3 \tROMA   ",
+          "SubPieces": []
+        },
+        {
+          "Type": 1,
+          "Position": 5,
+          "Text": "4 \tMILANO ",
+          "SubPieces": []
+        },
+        {
+          "Type": 0,
+          "Position": 6,
+          "Text": "5 \tFIRENZE",
+          "SubPieces": []
+        },
+        {
+          "Type": 3,
+          "Position": null,
+          "Text": null,
+          "SubPieces": []
+        },
+        {
+          "Type": 0,
+          "Position": 7,
+          "Text": "",
+          "SubPieces": []
+        }
+      ],
+      "OriginalNewLines": [
+        {
+          "Type": 0,
+          "Position": 1,
+          "Text": "ID\tNAME   ",
+          "SubPieces": []
+        },
+        {
+          "Type": 0,
+          "Position": 2,
+          "Text": "1 \tCATANIA",
+          "SubPieces": []
+        },
+        {
+          "Type": 0,
+          "Position": 3,
+          "Text": "2 \tPALERMO",
+          "SubPieces": []
+        },
+        {
+          "Type": 0,
+          "Position": 4,
+          "Text": "3 \tROMA   ",
+          "SubPieces": []
+        },
+        {
+          "Type": 3,
+          "Position": null,
+          "Text": null,
+          "SubPieces": []
+        },
+        {
+          "Type": 0,
+          "Position": 5,
+          "Text": "5 \tFIRENZE",
+          "SubPieces": []
+        },
+        {
+          "Type": 2,
+          "Position": 6,
+          "Text": "6 \tANCONA ",
+          "SubPieces": []
+        },
+        {
+          "Type": 0,
+          "Position": 7,
+          "Text": "",
+          "SubPieces": []
+        }
+      ]
+    }
+  ]
+}

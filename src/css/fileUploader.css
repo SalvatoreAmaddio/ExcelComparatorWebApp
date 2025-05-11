@@ -1,0 +1,48 @@
+.file-uploader-outer-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 1rem 10rem 0rem 10rem;
+  }
+
+  .file-uploader-inner-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1em;
+    border: 3px dashed black;
+    border-radius: 15px;
+    padding: 2rem;
+    z-index: 1;
+  }
+
+
+  .file-uploader-inner-container h3
+  {
+    margin-top: 1rem;
+    font-size: .9em;
+  }
+
+  .file-uploader-inner-container h3:last-of-type
+  {
+    margin-bottom: 1rem;
+  }
+
+  .file-uploader-inner-container span 
+  {
+    font-size: .5em;
+    position: absolute;
+    left: 1em;
+    top: -.6em;
+    z-index: 2;
+    background-color: var(--primary-white);
+    padding: 0px .8rem;
+  }
+
+  #xl-logo
+  {
+    height: 5rem;
+  }

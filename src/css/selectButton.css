@@ -1,0 +1,25 @@
+.select-file-btn
+{
+  padding: 1rem;
+  border-radius: 15px;
+  cursor: pointer;
+  min-width: 12rem;
+  font-size: .6em;
+  background-color: var(--primary-btn-color);
+  color: var(--primary-btn-txt-color);
+  border-width: 0px;
+  font-weight: bolder;
+  font-family: 'Arial', 'Helvetica', 'Calibri', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.select-file-btn:hover
+{
+  background-color: var(--primary-btn-color-hover);
+}
+
+.file-path
+{
+  margin-top: 1rem;
+  font-size: .6em;
+}
