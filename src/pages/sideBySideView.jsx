@@ -1,8 +1,8 @@
 import { useLocation } from "react-router-dom";
-import Expander from "../components/expander";
-import "./../css/ExcelView/sideBySideView.css";
+import Expander from "../components/expander/expander";
+import "./../css/sideBySideView.css";
 import xlFile from "../data_structures/xlFile";
-import SheetTabs from "../components/SheetTabs";
+import SheetTabs from "../components/sheetTabs/sheetTabs";
 
 export default function SideBySideView() {
   const location = useLocation();

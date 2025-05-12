@@ -1,6 +1,6 @@
 import Swal from "sweetalert2";
 
-export function UseDialogMessage()
+export function useDialogMessage()
 {
   function displayError(title = "Missing File", msg = "Please ensure you've uploaded two excel files")
     {

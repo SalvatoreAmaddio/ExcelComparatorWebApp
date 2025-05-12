@@ -1,6 +1,6 @@
-import "./../css/fileUploader.css";
-import xlLogo from "./../assets/xl_logo.png";
-import SelectButton from "./selectButton";
+import "./fileUploader.css";
+import xlLogo from "./../../assets/xl_logo.png";
+import SelectButton from "../selectButton/selectButton";
 
 export default function FileUploader({
   inputRef,

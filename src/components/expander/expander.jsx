@@ -1,8 +1,8 @@
 import { useState } from "react";
-import "./../css/expander.css";
-import csharp from "./../assets/csharp.png";
-import react from "./../assets/react.png";
-import xl_logo from "./../assets/xl_logo.png";
+import "./expander.css";
+import csharp from "./../../assets/csharp.png";
+import react from "./../../assets/react.png";
+import xl_logo from "./../../assets/xl_logo.png";
 
 export default function Expander() {
   const [isExpanded, setIsExpanded] = useState(false);

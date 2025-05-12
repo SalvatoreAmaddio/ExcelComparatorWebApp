@@ -1,10 +1,10 @@
-import { UseDialogMessage } from "./useDialogsMessage";
+import { useDialogMessage } from "./useDialogsMessage";
 import { useNavigate } from "react-router-dom";
 
 export function useUpload({ file1, file2 } = {}) {
 
     const navigate = useNavigate();
-    const {displayError, displayLoading, closeDialog} = UseDialogMessage();
+    const {displayError, displayLoading, closeDialog} = useDialogMessage();
 
     async function uploadClick()
     {

@@ -1,8 +1,8 @@
 import { useRef, useState } from "react";
-import { UseDialogMessage } from "./useDialogsMessage";
+import { useDialogMessage } from "./useDialogsMessage";
 
 export function useFileSelector() {
-  const {displayError} = UseDialogMessage();
+  const {displayError} = useDialogMessage();
   const allowedExtensions = [".xls", ".xlsx", ".xlsm", ".xlsb", ".csv"];
   const errTitle = "Invalid File Type";
   const errMsg = `Please select a valid Excel file.<br><br>Allowed extentions: ${allowedExtensions.join(", ")}`;
@@ -45,7 +45,8 @@ export function useFileSelector() {
   {
     const file = e.target.files?.[0];
 
-    if (!file) return;
+    if (!file) 
+      return;
 
     const selectedFileName = file.name.toLowerCase();
 

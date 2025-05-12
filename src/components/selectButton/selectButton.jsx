@@ -1,4 +1,4 @@
-import "./../css/selectButton.css";
+import "./selectButton.css";
 
 export default function SelectButton({
   inputRef,

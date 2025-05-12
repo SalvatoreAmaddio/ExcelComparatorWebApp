@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import "./../css/ExcelView/sheetTabs.css";
-import DiffView from "./diffView";
+import "./sheetTabs.css";
+import DiffView from "./../diffView/diffView";
 
 export default function SheetTabs({ file }) {
   const [activeTab, setActiveTab] = useState(0); // default to first tab

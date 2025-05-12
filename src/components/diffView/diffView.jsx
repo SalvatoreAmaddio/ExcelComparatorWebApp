@@ -1,5 +1,4 @@
-import React from "react";
-import "./../css/ExcelView/diffView.css";
+import "./diffView.css";
 
 export default function DiffView({ lines }) {
   return (

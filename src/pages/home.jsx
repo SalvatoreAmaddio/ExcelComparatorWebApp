@@ -1,8 +1,7 @@
 import "./../css/home.css";
-import "./../css/selectButton.css";
 import { useFileSelector } from "./../hooks/useFileSelector";
 import { useUpload } from "../hooks/useUpload";
-import FileUploader from "../components/fileUploader";
+import FileUploader from "../components/fileUploader/fileUploader";
 
 export default function Home() {
   const {

@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/home";
-import SideBySideView from "./pages/SideBySideView";
+import SideBySideView from "./pages/sideBySideView";
 
 function App() {
   return (
