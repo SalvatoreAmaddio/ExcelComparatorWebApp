@@ -15,15 +15,16 @@
     font-size: 1.1em;
     border: 3px dashed black;
     border-radius: 15px;
-    padding: 2rem;
+    padding: 1rem;
     z-index: 1;
   }
 
 
   .file-uploader-inner-container h3
   {
-    margin-top: 1rem;
-    font-size: .9em;
+    margin-top: .3rem;
+    font-size: .7em;
+    text-align: center;
   }
 
   .file-uploader-inner-container h3:last-of-type
@@ -44,5 +45,5 @@
 
   #xl-logo
   {
-    height: 5rem;
+    height: 4rem;
   }
