@@ -64,7 +64,8 @@ footer
 
 #swap-icon p
 {
-  font-size: .65em;
+  font-size: .5em;
+  text-align: center;
 }
 
 #swap-icon img
