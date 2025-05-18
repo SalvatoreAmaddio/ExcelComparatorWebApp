@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useRef, useState, useEffect } from "react";
 import "./sheetTabs.css";
 import DiffView from "./../diffView/diffView";
 
@@ -6,11 +6,50 @@ export default function SheetTabs({ file }) {
   const [activeTab, setActiveTab] = useState(0); // default to first tab
   const [showChangesOnly, setShowChangesOnly] = useState(true);
   const sheets = file.sheets;
+
+  const leftRef = useRef(null);
+  const rightRef = useRef(null);
+
   sheets.map((sheet) => sheet.filter(showChangesOnly));
 
   useEffect(() => {
     sheets.map((sheet) => sheet.filter(showChangesOnly));
   }, [showChangesOnly]);
+
+  // Scroll‐sync effect
+  useEffect(() => {
+    const leftEl = leftRef.current;
+    const rightEl = rightRef.current;
+    if (!leftEl || !rightEl) return;
+
+    let isSyncingLeft = false;
+    let isSyncingRight = false;
+
+    const onLeftScroll = () => {
+      if (isSyncingLeft) {
+        isSyncingLeft = false;
+        return;
+      }
+      isSyncingRight = true;
+      rightEl.scrollTop = leftEl.scrollTop;
+    };
+
+    const onRightScroll = () => {
+      if (isSyncingRight) {
+        isSyncingRight = false;
+        return;
+      }
+      isSyncingLeft = true;
+      leftEl.scrollTop = rightEl.scrollTop;
+    };
+
+    leftEl.addEventListener("scroll", onLeftScroll);
+    rightEl.addEventListener("scroll", onRightScroll);
+    return () => {
+      leftEl.removeEventListener("scroll", onLeftScroll);
+      rightEl.removeEventListener("scroll", onRightScroll);
+    };
+  }, [activeTab]); // re-bind when the content changes
 
   return (
     <div className="grid-setup tab-container">
@@ -34,9 +73,13 @@ export default function SheetTabs({ file }) {
           </div>
         </div>
         <div className="viewContainer">
-          <DiffView lines={sheets[activeTab].oldLines} />
+          <div className="diff-line-container" ref={leftRef}>
+            <DiffView lines={sheets[activeTab].oldLines} />
+          </div>
           <div className="divider" />
-          <DiffView lines={sheets[activeTab].newLines} />
+          <div className="diff-line-container" ref={rightRef}>
+            <DiffView lines={sheets[activeTab].newLines} />
+          </div>
         </div>
       </div>
 

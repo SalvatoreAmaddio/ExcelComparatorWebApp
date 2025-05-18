@@ -1,3 +1,9 @@
+.diff-line-container
+{
+    overflow-x: auto;
+    overflow-y: auto;  
+    white-space: nowrap;
+}
 
 .tab-container 
 {
@@ -77,9 +83,8 @@
     grid-template-columns: minmax(0, 1fr) .2rem minmax(0, 1fr);
     grid-template-areas:
     "left divider right";
-    overflow-y: auto;
-    overflow-x: auto;
-    scrollbar-gutter: stable;
+    overflow: auto;
+    min-height: 0;
 }
 
 .original-view

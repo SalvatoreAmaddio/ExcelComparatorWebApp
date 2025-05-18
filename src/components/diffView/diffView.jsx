@@ -2,7 +2,7 @@ import "./diffView.css";
 
 export default function DiffView({ lines }) {
   return (
-    <div className="diff-line-container">
+    <>
       {lines.map((line, i) => (
         <div key={i} className={`line-row type-${line.type}`}>
           {line.Type !== 3 && (
@@ -13,7 +13,7 @@ export default function DiffView({ lines }) {
           </div>
         </div>
       ))}
-    </div>
+    </>
   );
 }
 
