@@ -2,14 +2,13 @@ import "./selectButton.css";
 
 export default function SelectButton({
   inputRef,
-  fileName,
   openDialog,
   handleFileSelect,
 }) {
   return (
     <>
       <button className="select-file-btn" onClick={openDialog}>
-        Choose
+        or Browse
       </button>
 
       <input
@@ -21,8 +20,6 @@ export default function SelectButton({
         style={{ display: "none" }}
         onChange={handleFileSelect}
       />
-
-      <p className="file-path">{fileName}</p>
     </>
   );
 }

@@ -19,15 +19,22 @@ export default function FileUploader({
         onDrop={handleDrop}
       >
         <span>{title}</span>
-        <img id="xl-logo" src={xlLogo} />
-        <h3>Drag & Drop the Excel file here</h3>
-        <h3>OR</h3>
-        <SelectButton
-          fileName={fileName}
-          handleFileSelect={handleFileSelect}
-          inputRef={inputRef}
-          openDialog={openDialog}
-        />
+        <div className="test">
+          <img id="xl-logo" src={xlLogo} />
+          <div>
+            <h3>Drag & Drop</h3>
+            <SelectButton
+              fileName={fileName}
+              handleFileSelect={handleFileSelect}
+              inputRef={inputRef}
+              openDialog={openDialog}
+            />
+          </div>
+        </div>
+        <p className="supported-formats">
+          Supported formats: XLS, XLSX, XLSM, XLSB, CSV
+        </p>
+        <p className="file-path">{fileName}</p>
       </div>
     </div>
   );

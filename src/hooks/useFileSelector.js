@@ -71,6 +71,8 @@ export function useFileSelector() {
     inputRef,
     fileName,
     file,
+    setFileName,
+    setFile,
     handleDrop,
     handleDragOver,
     openDialog,

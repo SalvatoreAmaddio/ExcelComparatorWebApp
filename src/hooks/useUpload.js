@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 export function useUpload({ file1, file2 } = {}) {
 
     const navigate = useNavigate();
-    const {displayError, displayLoading, closeDialog} = useDialogMessage();
+    const {displayInfoMessage, displayError, displayLoading, closeDialog} = useDialogMessage();
 
     async function uploadClick()
     {
@@ -21,12 +21,18 @@ export function useUpload({ file1, file2 } = {}) {
         try
         {
             displayLoading();
-            const res = await fetch("http://localhost:5000/api/upload/excel",
+            const res = await fetch("https://localhost:7091/api/upload/excel",
                 {
                     method: "POST",
                     body: formData,
                 }
             );
+
+            if (res.status === 204)
+            {
+                displayInfoMessage("No edits","No changes have been detected between files.");    
+                return;
+            }
 
             const data = await res.json();
 
@@ -43,7 +49,7 @@ export function useUpload({ file1, file2 } = {}) {
         }
         catch (err)
         {
-            displayError("Error: " + err.name, err.message);
+            displayError("Error: " + err.name, `${err.message}`);
         }
     }
 

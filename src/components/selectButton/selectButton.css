@@ -1,7 +1,7 @@
 .select-file-btn
 {
-  padding: 1rem;
-  border-radius: 15px;
+  padding: .5rem;
+  border-radius: 1rem;
   cursor: pointer;
   min-width: 12rem;
   font-size: .6em;
@@ -16,10 +16,4 @@
 .select-file-btn:hover
 {
   background-color: var(--primary-btn-color-hover);
-}
-
-.file-path
-{
-  margin-top: 1rem;
-  font-size: .6em;
 }

@@ -1,7 +1,9 @@
 import "./../css/home.css";
 import { useFileSelector } from "./../hooks/useFileSelector";
 import { useUpload } from "../hooks/useUpload";
+import { useRef } from "react";
 import FileUploader from "../components/fileUploader/fileUploader";
+import swap from "./../assets/swap.png";
 
 export default function Home() {
   const {
@@ -12,6 +14,8 @@ export default function Home() {
     handleFileSelect: handleFileSelect1,
     handleDragOver: handleDragOver1,
     handleDrop: handleDrop1,
+    setFile: setFile1,
+    setFileName: setFileName1,
   } = useFileSelector();
 
   const {
@@ -22,9 +26,21 @@ export default function Home() {
     handleFileSelect: handleFileSelect2,
     handleDragOver: handleDragOver2,
     handleDrop: handleDrop2,
+    setFile: setFile2,
+    setFileName: setFileName2,
   } = useFileSelector();
 
   const { uploadClick } = useUpload({ file1, file2 });
+
+  const compRef = useRef(null);
+
+  const onSwapClick = () => {
+    setFile1(file2);
+    setFileName1(fileName2);
+
+    setFile2(file1);
+    setFileName2(fileName1);
+  };
 
   return (
     <div id="home-root">
@@ -35,6 +51,7 @@ export default function Home() {
 
       <div id="container">
         <FileUploader
+          ref={compRef}
           inputRef={inputRef1}
           fileName={fileName1}
           openDialog={openDialog1}
@@ -42,6 +59,10 @@ export default function Home() {
           handleDragOver={handleDragOver1}
           handleDrop={handleDrop1}
         />
+        <div id="swap-icon" onClick={onSwapClick}>
+          <img src={swap} />
+          <p>Swap</p>
+        </div>
         <FileUploader
           title="To this file"
           inputRef={inputRef2}

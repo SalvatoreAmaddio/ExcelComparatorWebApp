@@ -6,9 +6,10 @@ export default function SheetTabs({ file }) {
   const [activeTab, setActiveTab] = useState(0); // default to first tab
   const [showChangesOnly, setShowChangesOnly] = useState(true);
   const sheets = file.sheets;
-
   const leftRef = useRef(null);
   const rightRef = useRef(null);
+  const parentLeftHeight = useRef(null);
+  const parentRightHeight = useRef(null);
 
   sheets.map((sheet) => sheet.filter(showChangesOnly));
 
@@ -49,7 +50,7 @@ export default function SheetTabs({ file }) {
       leftEl.removeEventListener("scroll", onLeftScroll);
       rightEl.removeEventListener("scroll", onRightScroll);
     };
-  }, [activeTab]); // re-bind when the content changes
+  }, [activeTab]);
 
   return (
     <div className="grid-setup tab-container">
@@ -73,12 +74,20 @@ export default function SheetTabs({ file }) {
           </div>
         </div>
         <div className="viewContainer">
-          <div className="diff-line-container" ref={leftRef}>
-            <DiffView lines={sheets[activeTab].oldLines} />
+          <div className="diff-line-container" ref={parentLeftHeight}>
+            <DiffView
+              lines={sheets[activeTab].oldLines}
+              ref={leftRef}
+              parentRef={parentLeftHeight}
+            />
           </div>
           <div className="divider" />
-          <div className="diff-line-container" ref={rightRef}>
-            <DiffView lines={sheets[activeTab].newLines} />
+          <div className="diff-line-container" ref={parentRightHeight}>
+            <DiffView
+              lines={sheets[activeTab].newLines}
+              ref={rightRef}
+              parentRef={parentRightHeight}
+            />
           </div>
         </div>
       </div>

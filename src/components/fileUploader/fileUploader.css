@@ -1,49 +1,84 @@
-.file-uploader-outer-container {
-    display: flex;
-    flex-direction: column;
-    font-size: 2rem;
-    padding: 1rem;
-    margin: 1rem 10rem 0rem 10rem;
-  }
+.file-uploader-outer-container 
+{
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  padding: 1rem;
+  margin: 1rem 10rem 0rem 10rem;
+}
 
-  .file-uploader-inner-container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.1em;
-    border: 3px dashed black;
-    border-radius: 15px;
-    padding: 1rem;
-    z-index: 1;
-  }
+.file-uploader-inner-container 
+{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1em;
+  border: 2px dashed black;
+  border-radius: 15px;
+  padding: 1rem;
+  z-index: 1;
+  background-color: #EFEFEF;
+}
 
+.file-uploader-inner-container h3
+{
+  font-size: .7em;
+  text-align: center;
+}
 
-  .file-uploader-inner-container h3
+.file-uploader-inner-container span 
+{
+  font-size: .5em;
+  position: absolute;
+  left: .1em;
+  top: .6em;
+  z-index: 2;
+  background-color: transparent;
+  padding: 0px .8rem;
+}
+
+#xl-logo
+{
+  height: 4rem;
+}
+
+.file-path
+{
+  margin-top: 1rem;
+  font-size: .6em;
+}
+
+.test 
+{
+  display: flex;
+  gap:1.5rem;
+  align-items: center;
+}
+
+.supported-formats
+{
+  margin-top: .7rem;
+  font-size: .35em;
+  color: #7d7d7d;
+  text-align: center;
+}
+
+@media only screen and (max-width: 929px) 
+{
+  .test
   {
-    margin-top: .3rem;
-    font-size: .7em;
-    text-align: center;
+    margin-top: 1rem;
   }
+}
 
-  .file-uploader-inner-container h3:last-of-type
-  {
-    margin-bottom: 1rem;
-  }
-
+@media only screen and (max-width: 708px) 
+{
   .file-uploader-inner-container span 
   {
-    font-size: .5em;
-    position: absolute;
-    left: 1em;
-    top: -.6em;
-    z-index: 2;
-    background-color: var(--primary-white);
-    padding: 0px .8rem;
+    display: block;
+    position: static;
+    text-align: center;
   }
-
-  #xl-logo
-  {
-    height: 4rem;
-  }
+}

@@ -12,6 +12,16 @@ export function useDialogMessage()
         });
     }
 
+    function displayInfoMessage(title = "Message", msg)
+    {
+        Swal.fire({
+            title: title,
+            html: msg,
+            icon: "info",
+            confirmButtonText: "OK",
+        });
+    }
+
     function displayLoading()
     {
         Swal.fire({
@@ -28,6 +38,7 @@ export function useDialogMessage()
     }
 
     return{
+        displayInfoMessage,
         displayError,
         displayLoading,
         closeDialog

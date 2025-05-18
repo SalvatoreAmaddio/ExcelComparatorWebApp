@@ -1,26 +1,34 @@
 import "./diffView.css";
 import { FixedSizeList as List } from "react-window";
 
-export default function DiffView({ lines }) {
+export default function DiffView({ lines, ref, parentRef }) {
   const ROW_HEIGHT = 24;
 
   return (
     <List
-      height={ref?.current?.clientHeight || 400} // fallback height
+      height={parentRef.current?.clientHeight ?? 800}
       width="100%"
-      itemCount={lines.length}
+      itemCount={lines.length} // must be a Number
       itemSize={ROW_HEIGHT}
+      outerRef={ref}
     >
-      {lines.map((line, i) => (
-        <div key={i} className={`line-row type-${line.type}`}>
-          {line.Type !== 3 && (
-            <span className="line-position">{line.position}</span>
-          )}
-          <div className={`line-text-wrapper type-${line.type}`}>
-            <LineText line={line} />
+      {({ index, style }) => {
+        const line = lines[index];
+        return (
+          <div
+            key={index}
+            style={style} // VERY important: position your row
+            className={`line-row type-${line.type}`}
+          >
+            {line.type !== 3 && (
+              <span className="line-position">{line.position}</span>
+            )}
+            <div className={`line-text-wrapper type-${line.type}`}>
+              <LineText line={line} />
+            </div>
           </div>
-        </div>
-      ))}
+        );
+      }}
     </List>
   );
 }

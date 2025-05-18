@@ -14,7 +14,6 @@
     padding: 0 .5rem;
     font-size: medium;
     color: var(--line-number-color);    
-    border-right: 1px solid black;
     margin-right: 5px;
 }
 
