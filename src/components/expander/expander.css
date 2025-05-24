@@ -1,12 +1,18 @@
 .toggle-button {
     width: 100%;
-    padding: 10px;
+    padding: .25rem;
     background-color: var(--xl-color);
     color: white;
     border: none;
     cursor: pointer;
   }
   
+  .toggle-button img 
+  {
+    width: 1.1rem;
+    height: 1.1rem;
+  }
+
   .expander-content {
     text-align: center;
     padding: 15px;

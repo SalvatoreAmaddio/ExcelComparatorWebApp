@@ -3,6 +3,8 @@ import "./expander.css";
 import csharp from "./../../assets/csharp.png";
 import react from "./../../assets/react.png";
 import xl_logo from "./../../assets/xl_logo.png";
+import left_arrow from "../../assets/left_arrow.png";
+import right_arrow from "../../assets/right_arrow.png";
 
 export default function Expander() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -13,7 +15,7 @@ export default function Expander() {
         className="toggle-button"
         onClick={() => setIsExpanded(!isExpanded)}
       >
-        {isExpanded ? "<<" : ">>"}
+        <img src={isExpanded ? left_arrow : right_arrow} />
       </button>
 
       {isExpanded && (
