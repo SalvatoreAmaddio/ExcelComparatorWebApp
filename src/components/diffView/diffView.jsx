@@ -14,7 +14,7 @@ export default function DiffView({ lines, ref, parentRef }) {
   }
 
   useEffect(() => {
-    updateHeight(); // set initial height
+    updateHeight();
 
     window.addEventListener("resize", updateHeight);
     return () => {
@@ -26,7 +26,7 @@ export default function DiffView({ lines, ref, parentRef }) {
     <List
       height={height}
       width="100%"
-      itemCount={lines.length} // must be a Number
+      itemCount={lines.length}
       itemSize={ROW_HEIGHT}
       outerRef={ref}
     >
