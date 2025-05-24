@@ -7,10 +7,8 @@ export default function DiffView({ lines, ref, parentRef }) {
 
   const [height, setHeight] = useState(800);
 
-  function updateHeight()
-  {
-    if (parentRef?.current)
-    {
+  function updateHeight() {
+    if (parentRef?.current) {
       setHeight(parentRef.current.clientHeight);
     }
   }
@@ -37,7 +35,10 @@ export default function DiffView({ lines, ref, parentRef }) {
         return (
           <div
             key={index}
-            style={style} // VERY important: position your row
+            style={{
+              ...style,
+              width: "100vw",
+            }}
             className={`line-row type-${line.type}`}
           >
             {line.type !== 3 && (
