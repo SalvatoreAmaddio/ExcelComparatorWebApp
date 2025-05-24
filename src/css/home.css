@@ -7,7 +7,7 @@
     "footer";
     grid-template-rows: .1fr auto .1fr;
     height: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 header

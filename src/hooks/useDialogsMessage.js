@@ -26,7 +26,7 @@ export function useDialogMessage()
     {
         Swal.fire({
             title: "Uploading...",
-            html: "Please wait",
+            html: "<p>Please wait</p><p>I'm on a free tier, that's why I'm a bit slow :)</p>",
             allowOutsideClick: false,
             didOpen: () => Swal.showLoading(),
         });
