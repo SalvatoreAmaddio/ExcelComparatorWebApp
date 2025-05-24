@@ -76,35 +76,3 @@ footer
   height: 3rem;
   width: 3rem;
 }
-
-#mobile-warning
-{
-  display: none;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--xl-color);
-  color: white;
-  flex-direction: column;
-  text-align: center;
-  padding: 0 3rem;
-  line-height: 1.5rem;
-}
-
-#mobile-warning p:last-of-type
-{
-  align-self: flex-start;
-}
-
-@media only screen and (max-width: 480px) 
-{
-  #home-root 
-  {
-   display: none; 
-  }
-
-  #mobile-warning
-  {
-    display: flex;
-  }
-}
