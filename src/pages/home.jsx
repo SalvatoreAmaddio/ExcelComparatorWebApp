@@ -43,45 +43,60 @@ export default function Home() {
   };
 
   return (
-    <div id="home-root">
-      <header>
-        <h1>WELCOME</h1>
-        <h2>To the Excel Comparator Web App</h2>
-      </header>
-
-      <div id="container">
-        <FileUploader
-          ref={compRef}
-          inputRef={inputRef1}
-          fileName={fileName1}
-          openDialog={openDialog1}
-          handleFileSelect={handleFileSelect1}
-          handleDragOver={handleDragOver1}
-          handleDrop={handleDrop1}
-        />
-        <div id="swap-icon" onClick={onSwapClick}>
-          <img src={swap} />
-          <p>Swap</p>
-        </div>
-        <FileUploader
-          title="To this file"
-          inputRef={inputRef2}
-          fileName={fileName2}
-          openDialog={openDialog2}
-          handleFileSelect={handleFileSelect2}
-          handleDragOver={handleDragOver2}
-          handleDrop={handleDrop2}
-        />
-        <button className="inspect-btn select-file-btn" onClick={uploadClick}>
-          COMPARE
-        </button>
-      </div>
-      <footer>
+    <>
+      <div id="mobile-warning">
+        <p>Hi! Thanks for being here!</p>
         <p>
-          &copy; {new Date().getFullYear()} Salvatore Amaddio. All rights
-          reserved.
+          However, wouldn't be uncomfortable to compare Excel files on mobile?
         </p>
-      </footer>
-    </div>
+        <p>
+          Please use either a computer or a laptop for a better experience :)
+        </p>
+        <br />
+        <br />
+        <p>- Salvatore Amaddio.</p>
+      </div>
+
+      <div id="home-root">
+        <header>
+          <h1>WELCOME</h1>
+          <h2>To the Excel Comparator Web App</h2>
+        </header>
+
+        <div id="container">
+          <FileUploader
+            ref={compRef}
+            inputRef={inputRef1}
+            fileName={fileName1}
+            openDialog={openDialog1}
+            handleFileSelect={handleFileSelect1}
+            handleDragOver={handleDragOver1}
+            handleDrop={handleDrop1}
+          />
+          <div id="swap-icon" onClick={onSwapClick}>
+            <img src={swap} />
+            <p>Swap</p>
+          </div>
+          <FileUploader
+            title="To this file"
+            inputRef={inputRef2}
+            fileName={fileName2}
+            openDialog={openDialog2}
+            handleFileSelect={handleFileSelect2}
+            handleDragOver={handleDragOver2}
+            handleDrop={handleDrop2}
+          />
+          <button className="inspect-btn select-file-btn" onClick={uploadClick}>
+            COMPARE
+          </button>
+        </div>
+        <footer>
+          <p>
+            &copy; {new Date().getFullYear()} Salvatore Amaddio. All rights
+            reserved.
+          </p>
+        </footer>
+      </div>
+    </>
   );
 }
