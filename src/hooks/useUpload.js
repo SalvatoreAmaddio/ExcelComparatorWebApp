@@ -42,7 +42,6 @@ export function useUpload({ file1, file2 } = {}) {
                 closeDialog();
                 navigate("/Comparison", { state: data });
             }
-
             else
             {
                 displayError("Upload failed", data.message);
