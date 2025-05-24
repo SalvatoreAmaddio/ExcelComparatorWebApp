@@ -14,7 +14,7 @@ header
 {
     text-align: center;
     grid-area: header;
-    padding: 1rem;
+    padding: .8rem;
     font-size: .7em;
     background-color: var(--xl-color);
     color: var(--primary-btn-txt-color);
