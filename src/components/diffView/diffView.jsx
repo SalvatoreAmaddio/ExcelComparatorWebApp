@@ -1,12 +1,32 @@
 import "./diffView.css";
 import { FixedSizeList as List } from "react-window";
+import { useEffect, useState } from "react";
 
 export default function DiffView({ lines, ref, parentRef }) {
   const ROW_HEIGHT = 24;
 
+  const [height, setHeight] = useState(800);
+
+  function updateHeight()
+  {
+    if (parentRef?.current)
+    {
+      setHeight(parentRef.current.clientHeight);
+    }
+  }
+
+  useEffect(() => {
+    updateHeight(); // set initial height
+
+    window.addEventListener("resize", updateHeight);
+    return () => {
+      window.removeEventListener("resize", updateHeight);
+    };
+  }, [parentRef]);
+
   return (
     <List
-      height={parentRef.current?.clientHeight ?? 800}
+      height={height}
       width="100%"
       itemCount={lines.length} // must be a Number
       itemSize={ROW_HEIGHT}
