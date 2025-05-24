@@ -40,6 +40,7 @@
     grid-area: header;
     background-color: var(--light-gray);
     padding: 1rem;
+    font-size: .8em;
 }
 
 .divider
@@ -53,6 +54,7 @@
 {
     grid-area: fileNames;
     display: flex;
+    font-size: .85em;
 }
 
 .leftName
@@ -111,6 +113,8 @@
     padding: 0.5rem 1.2rem;
     cursor: pointer;
     color: var(--light-gray);    
+    font-size: .75em;
+    border: none;
 }
 
 .tabs button:hover

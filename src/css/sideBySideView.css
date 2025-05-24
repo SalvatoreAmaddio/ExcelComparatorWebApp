@@ -17,14 +17,15 @@
     grid-template-areas:
     "content"
     "footer";
-    grid-template-rows: 1fr 2.5rem;
+    grid-template-rows: 1fr 2rem;
   }
 
   .content-footer 
   {
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
     padding:.5rem;
-    line-height: 1.5rem;
+    line-height: 1.2rem;
     background-color: var(--light-gray);
     grid-area: footer;
+    font-size: .8em;
   }

@@ -47,6 +47,7 @@
     z-index: 1000;
     transition: width 0.3s ease;
     overflow: hidden;
+    font-size: .9em;
   }
   
   .expander.expanded {
