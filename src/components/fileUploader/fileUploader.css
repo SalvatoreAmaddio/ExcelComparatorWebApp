@@ -3,8 +3,8 @@
   display: flex;
   flex-direction: column;
   font-size: 2rem;
-  padding: 1rem;
-  margin: 1rem 10rem 0rem 10rem;
+  padding: 1rem 1rem 1rem 1rem;
+  margin: 0rem 10rem 0rem 10rem;
 }
 
 .file-uploader-inner-container 
@@ -16,8 +16,8 @@
   justify-content: center;
   font-size: 1em;
   border: 1px dashed black;
-  border-radius: 15px;
-  padding: 1rem;
+  border-radius: 1rem;
+  padding: 1rem 1rem .3rem 1rem;
   z-index: 1;
   background-color: #EFEFEF;
 }
@@ -42,7 +42,7 @@
 
 #xl-logo
 {
-  height: 4rem;
+  height: 3rem;
 }
 
 .file-path
@@ -61,7 +61,7 @@
 .supported-formats
 {
   margin-top: .7rem;
-  font-size: .3em;
+  font-size: .25em;
   color: #7d7d7d;
   text-align: center;
 }

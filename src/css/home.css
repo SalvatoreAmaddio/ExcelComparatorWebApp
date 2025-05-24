@@ -46,7 +46,7 @@ footer
   grid-area: footer;
   background-color: var(--xl-color);
   color: var(--primary-btn-txt-color);
-  padding: 1rem;
+  padding: .5rem;
   text-align: center;
   font-size: .7em;
 }
@@ -66,13 +66,13 @@ footer
 
 #swap-icon p
 {
-  font-size: .5em;
+  font-size: .4em;
   text-align: center;
 }
 
 #swap-icon img
 {
   align-self: center;
-  height: 3rem;
-  width: 3rem;
+  height: 2rem;
+  width: 2rem;
 }
