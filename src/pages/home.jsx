@@ -72,8 +72,8 @@ export default function Home() {
           handleDragOver={handleDragOver2}
           handleDrop={handleDrop2}
         />
-        <button className="select-file-btn inspect-btn" onClick={uploadClick}>
-          SUBMIT
+        <button className="inspect-btn select-file-btn" onClick={uploadClick}>
+          COMPARE
         </button>
       </div>
       <footer>

@@ -21,7 +21,8 @@ export function useUpload({ file1, file2 } = {}) {
         try
         {
             displayLoading();
-            const res = await fetch("https://localhost:7091/api/upload/excel",
+            //https://localhost:7091/api/upload/excel
+            const res = await fetch("https://excelcomparatorapi.onrender.com/api/upload/excel",
                 {
                     method: "POST",
                     body: formData,

@@ -36,7 +36,8 @@ header h1
 {
   margin: 0rem 11rem;
   margin-bottom: 1rem;
-  font-size: 1.1em;
+  font-size: .65em !important;
+  padding: .8rem !important;
 }
 
 footer 
