@@ -3,7 +3,7 @@
   padding: .5rem;
   border-radius: 1rem;
   cursor: pointer;
-  min-width: 12rem;
+  min-width: 8.5rem;
   font-size: .5em;
   background-color: var(--primary-btn-color);
   color: var(--primary-btn-txt-color);

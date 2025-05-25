@@ -44,10 +44,12 @@ header h1
 footer 
 {
   grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--xl-color);
   color: var(--primary-btn-txt-color);
   padding: .5rem;
-  text-align: center;
   font-size: .7em;
 }
 
