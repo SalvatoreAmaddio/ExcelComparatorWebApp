@@ -4,7 +4,7 @@ import DiffView from "./../diffView/diffView";
 
 export default function SheetTabs({ file }) {
   const [activeTab, setActiveTab] = useState(0); // default to first tab
-  const [showChangesOnly, setShowChangesOnly] = useState(true);
+  const [showChangesOnly, setShowChangesOnly] = useState(retrieveFlag());
   const sheets = file.sheets;
   const leftRef = useRef(null);
   const rightRef = useRef(null);
@@ -15,7 +15,24 @@ export default function SheetTabs({ file }) {
 
   useEffect(() => {
     sheets.map((sheet) => sheet.filter(showChangesOnly));
+    saveFlag();
   }, [showChangesOnly]);
+
+  useEffect(() => {
+    setShowChangesOnly(retrieveFlag());
+  }, [activeTab]);
+
+  function saveFlag() {
+    sessionStorage.setItem(
+      "flag_" + activeTab,
+      JSON.stringify(showChangesOnly)
+    );
+  }
+
+  function retrieveFlag() {
+    const data = sessionStorage.getItem("flag_" + activeTab);
+    return JSON.parse(data) ?? true;
+  }
 
   // Scroll‐sync effect
   useEffect(() => {
