@@ -3,7 +3,7 @@ import "./sheetTabs.css";
 import DiffView from "./../diffView/diffView";
 
 export default function SheetTabs({ file }) {
-  const [activeTab, setActiveTab] = useState(0); // default to first tab
+  const [activeTab, setActiveTab] = useState(getTabindex());
   const [showChangesOnly, setShowChangesOnly] = useState(retrieveFlag());
   const sheets = file.sheets;
   const leftRef = useRef(null);
@@ -20,6 +20,7 @@ export default function SheetTabs({ file }) {
 
   useEffect(() => {
     setShowChangesOnly(retrieveFlag());
+    saveTabindex();
   }, [activeTab]);
 
   function saveFlag() {
@@ -27,6 +28,15 @@ export default function SheetTabs({ file }) {
       "flag_" + activeTab,
       JSON.stringify(showChangesOnly)
     );
+  }
+
+  function saveTabindex() {
+    sessionStorage.setItem("tabIndex", JSON.stringify(activeTab));
+  }
+
+  function getTabindex() {
+    const data = sessionStorage.getItem("tabIndex");
+    return JSON.parse(data) ?? 0;
   }
 
   function retrieveFlag() {
