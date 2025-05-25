@@ -40,6 +40,7 @@ export function useUpload({ file1, file2 } = {}) {
             if (res.ok)
             {
                 closeDialog();
+                sessionStorage.clear();
                 navigate("/Comparison", { state: data });
             }
             else
